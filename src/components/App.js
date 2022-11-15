@@ -5,7 +5,7 @@ import NavBar from './NavBar'
 import Search from './Search'
 import MainList from './MainList';
 import SaleList from './SaleList';
-import { Switch, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 import ReviewList from "./ReviewList"
 import {useState} from 'react'
 
@@ -17,19 +17,13 @@ const [renderState, setRenderState] = useState(true)
       <Header />
       <Search />
       <NavBar renderState={renderState} setRenderState={setRenderState} />
-      <Switch>
-        <Route path="/reviews">
-            <ReviewList />
-        </Route>
-        <Route path="/sales">
-            <SaleList />
-          </Route>
-          <Route path="/">
-            <MainList />
-          </Route>
+      <Routes>
+        <Route element={<ReviewList />} path="/reviews"/>
+        <Route element={<SaleList />} path="/sales"/>
+        <Route element={<MainList />} path="/"/>
 
 
-        </Switch>
+        </Routes>
     </div>
   )
 }
