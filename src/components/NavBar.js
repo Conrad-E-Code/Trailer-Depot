@@ -1,14 +1,21 @@
-import MainList from './MainList'
-import ReviewList from './ReviewList'
-import SaleList from './SaleList'
-
 function NavBar() {
     return (
-        <div>
-            <button>Main</button>
-            <button>Review</button>
-            <button>Sale</button>
-        </div>
+       <nav className='nav'>
+        <ul>
+            <li>
+                <a>All Trailers</a>
+            </li>
+            <li>
+                <a>For Sale</a>
+            </li>
+            <li>
+                <a>For Rent</a>
+            </li>
+            <li>
+                <a>Post Your Own</a>
+            </li>
+        </ul>
+       </nav> 
     )
 }
 
