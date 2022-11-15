@@ -6,17 +6,17 @@ function NavBar({setRenderState, renderState}) {
        <nav className='nav'>
         <ul>
             <li>
-                <NavLink to="/" onClick={() => setRenderState(!renderState)}>All Trailers</NavLink>
+                <NavLink to="/" >All Trailers</NavLink>
             </li>
             <li>
-                <NavLink onClick={() => setRenderState(!renderState)} to="/sales">For Sale</NavLink>
+                <NavLink  to="/sales">For Sale</NavLink>
             </li>
             <li>
-                <NavLink onClick={() => setRenderState(!renderState)} to="/rent"> For Rent </NavLink>
+                <NavLink  to="/rent"> For Rent </NavLink>
                 {/* Redirect to home page with message saying rent coming soon if we cant meet goal.*/}
             </li>
             <li>
-            <NavLink onClick={() => setRenderState(!renderState)} to="/reviews">Post Your Own</NavLink>
+            <NavLink to="/reviews">Post Your Own</NavLink>
             </li>
         </ul>
        </nav> 
