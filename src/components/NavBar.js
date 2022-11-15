@@ -1,18 +1,22 @@
+import {NavLink} from 'react-router-dom'
+
+
 function NavBar() {
     return (
        <nav className='nav'>
         <ul>
             <li>
-                <a>All Trailers</a>
+                <NavLink to="/">All Trailers</NavLink>
             </li>
             <li>
-                <a>For Sale</a>
+                <NavLink to="/sales">For Sale</NavLink>
             </li>
             <li>
-                <a>For Rent</a>
+                <NavLink to="/rent"> For Rent </NavLink>
+                {/* Redirect to home page with message saying rent coming soon if we cant meet goal.*/}
             </li>
             <li>
-                <a>Post Your Own</a>
+            <NavLink to="/review">Post Your Own</NavLink>
             </li>
         </ul>
        </nav> 
