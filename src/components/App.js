@@ -6,7 +6,7 @@ import Search from './Search'
 import MainList from './MainList';
 import SaleList from './SaleList';
 import { Routes, Route } from "react-router-dom"
-import ReviewList from "./ReviewList"
+import NewForm from "./NewForm"
 import {useState} from 'react'
 
 function App() {
@@ -18,7 +18,7 @@ const [renderState, setRenderState] = useState(true)
       <Search />
       <NavBar renderState={renderState} setRenderState={setRenderState} />
       <Routes>
-        <Route element={<ReviewList />} path="/reviews"/>
+        <Route element={<NewForm />} path="/reviews"/>
         <Route element={<SaleList />} path="/sales"/>
         <Route element={<MainList />} path="/"/>
 
