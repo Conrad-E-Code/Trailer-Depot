@@ -1,14 +1,16 @@
-import './App.css';
+import '../App.css';
 import Header from './Header'
 import NavBar from './NavBar'
+import ReviewCard from './ReviewCard';
 import Search from './Search'
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header />
       <NavBar />
-      <Search />
+      <Search /> */}
+      <ReviewCard />
     </div>
   );
 }
