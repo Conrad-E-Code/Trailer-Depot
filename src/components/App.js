@@ -28,7 +28,7 @@ useEffect(() => {
       <Search />
       <NavBar />
       <Routes>
-        <Route element={<NewForm />} path="/trailers/new"/>
+        <Route element={<NewForm trailers={trailers} setTrailers={setTrailers} />} path="/trailers/new"/>
         <Route element={<MainList trailers={trailersFS} />} path="/sales"/>
         <Route element={<MainList trailers={trailersFR} />} path="/rent"/>
         <Route element={<MainList trailers={trailers}/>} path="/"/>
