@@ -15,7 +15,7 @@ const [search, setSearch] = useState('')
 
 useEffect(() => {
 
-  fetch('http://localhost:3001/trailers')
+  fetch('http://localhost:3000/trailers')
   .then((r) => r.json())
   .then(setTrailers)
 
