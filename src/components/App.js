@@ -11,9 +11,11 @@ import {useEffect, useState} from 'react'
 function App() {
 const [trailers, setTrailers] = useState([])
 
+const  trailersFS = trailers.filter((trailer) => { return trailer["for_sale"] === true})
+const  trailersFR = trailers.filter((trailer) => { return trailer["for_rent"] === true})
 useEffect(() => {
 
-  fetch('http://localhost:3000/trailers')
+  fetch('http://localhost:3001/trailers')
   .then((r) => r.json())
   .then(setTrailers)
 
@@ -27,7 +29,8 @@ useEffect(() => {
       <NavBar />
       <Routes>
         <Route element={<NewForm />} path="/trailers/new"/>
-        <Route element={<SaleList />} path="/sales"/>
+        <Route element={<MainList trailers={trailersFS} />} path="/sales"/>
+        <Route element={<MainList trailers={trailersFR} />} path="/rent"/>
         <Route element={<MainList trailers={trailers}/>} path="/"/>
       </Routes>
     </div>
