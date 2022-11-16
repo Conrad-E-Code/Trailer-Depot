@@ -56,3 +56,15 @@
   cursor: pointer;
   height: 25px;
 }
+
+.trailer-card {
+  text-align: center;
+  padding-top: 25px;
+  border: 1px solid;
+  border-color: rgb(90, 90, 217);
+  padding-bottom: 25px;
+}
+
+.location {
+  font-style: italic;
+}

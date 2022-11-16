@@ -7,20 +7,28 @@ import MainList from './MainList';
 import SaleList from './SaleList';
 import { Routes, Route } from "react-router-dom"
 import NewForm from "./NewForm"
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
 
 function App() {
-const [renderState, setRenderState] = useState(true)
+const [trailers, setTrailers] = useState([])
+
+useEffect(() => {
+
+  fetch('http://localhost:3000/trailers')
+  .then((r) => r.json())
+  .then(setTrailers)
+
+}, [])
 
   return (
     <div className="App">
       <Header />
       <Search />
-      <NavBar renderState={renderState} setRenderState={setRenderState} />
+      <NavBar />
       <Routes>
-        <Route element={<NewForm />} path="/reviews"/>
+        <Route element={<NewForm />} path="/trailers/new"/>
         <Route element={<SaleList />} path="/sales"/>
-        <Route element={<MainList />} path="/"/>
+        <Route element={<MainList trailers={trailers}/>} path="/"/>
 
 
         </Routes>

@@ -1,20 +1,17 @@
 
+import TrailerCard from './TrailerCard'
 
+function MainList({ trailers }) {
 
+    const mappedTrailers = trailers.map((trailer) => {
+        return (
+            <TrailerCard key={trailer.id} trailers={trailer}/>
+        )
+    })
 
-function MainList(props) {
     return (
-    <>
-        <div>
-         HELLO FROM MAIN
-        </div>
-    </>
+        <div>{mappedTrailers}</div>
     )
 }
 
-
-
-
-
-
-export default MainList
+export default MainList;

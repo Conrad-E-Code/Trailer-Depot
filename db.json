@@ -1,24 +1,110 @@
 {
     "trailers": [
         {
-    "Name":"J-roc",
-    "Price": 0,
-    "for-sale": false,
-    "image-album": ["/Developement/code/se-prep/2-phase-group-1-project/Images/sideview-trailer-in-tow.JPG", "/Developement/code/se-prep/2-phase-group-1-project/Images/painted-tongue.JPG"],
-    "location": {
-    "city": "Seattle",
-    "state": "Washington"},
-    "reviews": ["This Trailer Rocks!", "I hate everything about this trailer"]
-         },
-         {
-            "Name":"Betsy",
-            "Price": 16,
-            "for-sale": true,
-            "image-album": ["/Developement/code/se-prep/2-phase-group-1-project/Images/trailer-basecoat.JPG", "/Developement/code/se-prep/2-phase-group-1-project/Images/painted-tongue.JPG"],
-            "location": {
-            "city": "Los Angeles",
-            "state": "California"},
-            "reviews": ["This Trailer Rocks!", "I hate everything about this trailer"]
-                 }
-            ]
+            "id": 1,
+            "name": "J-roc",
+            "for_sale": false,
+            "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
+            "location": "Seattle, Washington",
+            "review": "This trailer rocks!"
+        },
+        {
+            "id": 2,
+            "name": "Betsy",
+            "for_sale": true,
+            "image": "https://www.trailersuperstore.com/content/uploads/2022/10/2017-Diamond-C-5x8-Landscape-Utility-Trailer-1.jpg",
+            "location": "Los Angeles, California",
+            "review": "This is the worst trailer ever.",
+            "price": 200
+        },
+        {
+            "id": 3,
+            "name": "Marco",
+            "for_sale": false,
+            "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
+            "location": "Seattle, Washington",
+            "review": "This trailer rocks!",
+            "price": 150
+        },
+        {
+            "id": 4,
+            "name": "Conrad",
+            "for_sale": false,
+            "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
+            "location": "Seattle, Washington",
+            "review": "This trailer rocks!",
+            "price": 150
+        },
+        {
+            "id": 5,
+            "name": "Will",
+            "for_sale": false,
+            "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
+            "location": "Seattle, Washington",
+            "review": "This trailer rocks!",
+            "price": 150
+        },
+        {
+            "id": 6,
+            "name": "Phil",
+            "for_sale": false,
+            "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
+            "location": "Seattle, Washington",
+            "review": "This trailer rocks!",
+            "price": 150
+        },
+        {
+            "id": 7,
+            "name": "Abby",
+            "for_sale": false,
+            "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
+            "location": "Seattle, Washington",
+            "review": "This trailer rocks!",
+            "price": 150
+        },
+        {
+            "id": 8,
+            "name": "Louis",
+            "for_sale": false,
+            "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
+            "location": "Seattle, Washington",
+            "review": "This trailer rocks!",
+            "price": 150
+        },
+        {
+            "id": 9,
+            "name": "Bagel",
+            "for_sale": false,
+            "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
+            "location": "Seattle, Washington",
+            "review": "This trailer rocks!"
+        },
+        {
+            "id": 10,
+            "name": "Cup",
+            "for_sale": true,
+            "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
+            "location": "Seattle, Washington",
+            "review": "This trailer rocks!"
+        },
+        {
+            "id": 11,
+            "name": "Shoe",
+            "for_sale": true,
+            "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
+            "location": "Seattle, Washington",
+            "review": "This trailer rocks!",
+            "price": 150
+        },
+        {
+            "id": 12,
+            "name": "Dusty",
+            "for_sale": true,
+            "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
+            "location": "Seattle, Washington",
+            "review": "This trailer rocks!",
+            "price": 150
+        }
+    ]
+    
 }
