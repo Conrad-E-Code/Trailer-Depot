@@ -16,7 +16,7 @@ function NavBar({setRenderState, renderState}) {
                 {/* Redirect to home page with message saying rent coming soon if we cant meet goal.*/}
             </li>
             <li>
-            <NavLink to="/reviews">Post Your Own</NavLink>
+            <NavLink to="/trailers/new">Post Your Own</NavLink>
             </li>
         </ul>
        </nav> 
