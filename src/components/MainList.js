@@ -2,11 +2,11 @@
 
 
 
-function MainList(props) {
+function MainList({mappedTrailers}) {
     return (
     <>
         <div>
-         HELLO FROM MAIN
+         {mappedTrailers}
         </div>
     </>
     )

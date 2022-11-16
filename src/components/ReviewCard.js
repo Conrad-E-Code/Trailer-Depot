@@ -1,21 +1,26 @@
 
-function ReviewCard(props) {
-    const imageArray = ["./trailer-basecoat","./stenciling-process"]
-    const renderImages = imageArray.map((imagesrc) => {
-        console.log(imagesrc)
+function ReviewCard({name,price,forSale,imageAlbum}) {
+    //const imageArray = ["./trailer-basecoat","./stenciling-process"]
+    const renderImages = imageAlbum.map((imagesrc) => {
+      
             return (
-                <li>
-                    <img src="./trailer-basecoat.JPG" alt="IMAGE" />
-                    </li>
+                
+                    <img src={imagesrc} alt='this is a canvas'/>
+                    
         )})
     
+
+
+
+
     return <div> 
-        <h2>Render Name Here</h2>
-        <p>Render Price Here</p>
-        <p> Conditionally render for sale/not for sale</p>
+        
+        <h2>{name}</h2>
+        <p>{price}</p>
+        <p> {forSale ? "For Sale!" : "Priceless "}</p>
         <ul>
-            <li>IMAGE LIST HERE</li>
             {renderImages}
+            
         </ul>
 
     </div>
