@@ -1,11 +1,17 @@
-function SaleList(props) {
+
+import TrailerCard from './TrailerCard'
+
+function SaleList({ trailers }) {
+
+    const mappedTrailers = trailers.map((trailer) => {
+        return (
+            <TrailerCard key={trailer.id} trailers={trailer}/>
+        )
+    })
 
     return (
-        <div>
-            HELLO FROM SALES
-        </div>
+        <div>{mappedTrailers}</div>
     )
 }
 
-
-export default SaleList
+export default SaleList;
