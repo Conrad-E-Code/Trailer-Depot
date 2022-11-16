@@ -4,23 +4,11 @@ import React, { useState } from 'react';
 import {Link} from "react-router-dom"
 
 function TrailerCard({ trailers, handleDelete  }) {
-    // function handleDelete(id) {
-    //     const trailersminusOne = trailers.filter((trailer) => trailer.id === !id)
-        
-    //     const configObj = {
-    //         method:"DELETE",
-    //         headers: {"content-type": "application/json"}
-    //     }
-    //   fetch(`http://localhost:3001/trailers/${id}`, configObj)
-    //   .then(
-    //     setTrailers(trailersminusOne)
-    //   )
-    // }
 
     const [showReview, setShowReview] = useState(false)
+    const [showHover, setShowHover] = useState(false)
 
     const id = trailers.id
-
     
     function handleClick() {
         console.log('Clicked')
@@ -30,7 +18,7 @@ function TrailerCard({ trailers, handleDelete  }) {
     return (
         <li className='card-item'>
             <div className='trailer-card' style={{  cursor: 'pointer', width: '18rem' }}>
-                <img onClick={handleClick} className='card-image' variant="top" src={trailers.image} height='200px' width='225px'/>
+                <img onClick={handleClick} className='card-image' variant="top" src={trailers.image} height='200px' width='225px' title='Click To View Desciption'/>
                 <h2 className='card-name'>{trailers.name}</h2>
                 {showReview ? <p className='card-review'>Description: {trailers.description}</p> : ''}
                 
@@ -41,6 +29,7 @@ function TrailerCard({ trailers, handleDelete  }) {
                 <ListGroup.Item>
                         <button onClick={() => {handleDelete(id)}}>Delete Post</button>
                         <Link to={`/trailers/${id}/details`}><button>Details</button></Link>
+
 
                 </ListGroup.Item>
             </div>
