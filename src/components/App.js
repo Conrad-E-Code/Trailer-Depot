@@ -15,7 +15,7 @@ const  trailersFS = trailers.filter((trailer) => { return trailer["for_sale"] ==
 const  trailersFR = trailers.filter((trailer) => { return trailer["for_rent"] === true})
 useEffect(() => {
 
-  fetch('http://localhost:3000/trailers')
+  fetch('http://localhost:3001/trailers')
   .then((r) => r.json())
   .then(setTrailers)
 

@@ -7,7 +7,7 @@
       "for_rent": true,
       "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
       "location": "Seattle, Washington",
-      "review": "This trailer rocks!"
+      "description": "This trailer rocks!"
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "for_rent": false,
       "image": "https://www.trailersuperstore.com/content/uploads/2022/10/2017-Diamond-C-5x8-Landscape-Utility-Trailer-1.jpg",
       "location": "Los Angeles, California",
-      "review": "This is the worst trailer ever.",
+      "description": "This is the worst trailer ever.",
       "price": 200
     },
     {
@@ -26,7 +26,7 @@
       "for_rent": true,
       "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
       "location": "Seattle, Washington",
-      "review": "This trailer rocks!",
+      "description": "This trailer rocks!",
       "price": 150
     },
     {
@@ -36,7 +36,7 @@
       "for_rent": true,
       "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
       "location": "Seattle, Washington",
-      "review": "This trailer rocks!",
+      "description": "This trailer rocks!",
       "price": 150
     },
     {
@@ -46,7 +46,7 @@
       "for_rent": true,
       "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
       "location": "Seattle, Washington",
-      "review": "This trailer rocks!",
+      "description": "This trailer rocks!",
       "price": 150
     },
     {
@@ -56,7 +56,7 @@
       "for_rent": true,
       "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
       "location": "Seattle, Washington",
-      "review": "This trailer rocks!",
+      "description": "This trailer rocks!",
       "price": 150
     },
     {
@@ -66,7 +66,7 @@
       "for_rent": true,
       "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
       "location": "Seattle, Washington",
-      "review": "This trailer rocks!",
+      "description": "This trailer rocks!",
       "price": 150
     },
     {
@@ -76,7 +76,7 @@
       "for_rent": true,
       "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
       "location": "Seattle, Washington",
-      "review": "This trailer rocks!",
+      "description": "This trailer rocks!",
       "price": 150
     },
     {
@@ -86,7 +86,7 @@
       "for_rent": true,
       "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
       "location": "Seattle, Washington",
-      "review": "This trailer rocks!"
+      "description": "This trailer rocks!"
     },
     {
       "id": 10,
@@ -95,7 +95,7 @@
       "for_rent": true,
       "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
       "location": "Seattle, Washington",
-      "review": "This trailer rocks!"
+      "description": "This trailer rocks!"
     },
     {
       "id": 11,
@@ -104,7 +104,7 @@
       "for_rent": false,
       "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
       "location": "Seattle, Washington",
-      "review": "This trailer rocks!",
+      "description": "This trailer rocks!",
       "price": 150
     },
     {
@@ -114,8 +114,19 @@
       "for_rent": false,
       "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
       "location": "Seattle, Washington",
-      "review": "This trailer rocks!",
+      "description": "This trailer rocks!",
       "price": 150
+    },
+    {
+      "name": "NAme no price no rate",
+      "for_sale": false,
+      "for_rent": false,
+      "image": "Image",
+      "location": "Location",
+      "description": "Description",
+      "price": "1000",
+      "rate": "75",
+      "id": 13
     }
   ]
 }
