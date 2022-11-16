@@ -1,16 +1,77 @@
-function NewForm(props) {
+import {useState} from 'react'
+import {useNavigate} from "react-router-dom"
+
+function NewForm({trailers, setTrailers}) {
+    const history = useNavigate()
+    function handleSubmit(e) {
+        e.preventDefault()
+        const configObj = {
+            method:"POST",
+            headers: {
+                "content-type":"application/json"
+            },
+            body: JSON.stringify(formData)
+        }
+    fetch("http://localhost:3001/trailers", configObj)
+    .then(r => r.json())
+    .then((respData) => {
+        console.log(respData)
+        setTrailers([respData, ...trailers])
+        history(`/`)
+                        }
+         )
+                            }
+    function handleChange(e) {setFormData({...formData, [e.target.name]: e.target.value})}
+    const [formData, setFormData] = useState(
+        {
+            "name": "",
+            "for_sale": false,
+            "for_rent": false,
+            "image": "",
+            "location": "",
+            "review": ""
+
+        }
+
+    )
     return(
     <div>
-        <form className="new-trailer-form">
+        <form onSubmit={handleSubmit} className="new-trailer-form">
             <h2>Create New Listing</h2>
             <ul>
-                <li><input placeholder='Title'></input></li>
-                <li><input placeholder='Image URL'></input></li>
-                <li><input placeholder='City'></input></li>
-                <li><input placeholder='State'></input></li>
+                <li>
+                    <label>
+                        <input type= "checkbox"name="for_rent" value={formData["for-rent"]} onChange={(e) => {setFormData(
+                            {
+                                ...formData,
+                                [e.target.name]: !formData["for_rent"]
+                            }
+                        )}} placeholder='Title'>
+                        </input>
+                        Check if Trailer is For Rent
+                    </label>
+                </li>
+                    
+                <li>
+                    <label>
+                        <input type="checkbox" name="for_sale" value={formData["for_sale"]} onChange={(e) => {setFormData(
+                            {
+                                ...formData,
+                                [e.target.name]: !formData["for_sale"]
+                            }
+                        )}}>
+                        </input>
+                        Check if Trailer is For Sale
+                     </label>
+                </li>
+                <li><input required name="name" value={formData.name} onChange={(e) => {handleChange(e)}} placeholder='Enter Trailer Name'></input></li>
+                <li><input required name="image" value={formData.image} onChange={(e) => {handleChange(e)}} placeholder='Image URL'></input></li>
+                <li><input required name="location"value={formData.location} onChange={(e) => {handleChange(e)}} placeholder='Add location'></input></li>
+                <li><input required name="review" value={formData.review} onChange={(e) => {handleChange(e)}} placeholder='Add a Review *fix me*'></input></li>
+                {formData["for_sale"] ? <li><input required type="number" name="price" value={formData.price} onChange={(e) => {handleChange(e)}} placeholder='Enter Asking Price'></input></li>: null}
             </ul>
-            <button className='new-form-button'>Submit</button>            
-        </form>
+            <button type="submit" className='new-form-button'>Submit</button>            
+        </form >
     </div>
     )
 }
