@@ -10,7 +10,7 @@ function MainList({ trailers }) {
     })
 
     return (
-        <div>{mappedTrailers}</div>
+        <ul className='cards'>{mappedTrailers}</ul>
     )
 }
 
