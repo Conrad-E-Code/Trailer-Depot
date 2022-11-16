@@ -1,15 +1,6 @@
 {
   "trailers": [
     {
-      "id": 1,
-      "name": "J-roc",
-      "for_sale": false,
-      "for_rent": true,
-      "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
-      "location": "Seattle, Washington",
-      "description": "This trailer rocks!"
-    },
-    {
       "id": 2,
       "name": "Betsy",
       "for_sale": true,
@@ -17,47 +8,72 @@
       "image": "https://www.trailersuperstore.com/content/uploads/2022/10/2017-Diamond-C-5x8-Landscape-Utility-Trailer-1.jpg",
       "location": "Los Angeles, California",
       "description": "This is the worst trailer ever.",
-      "price": 200
+      "price": 200,
+      "rate": 10,
+      "reviews": [
+        "First Review hahaha",
+        "Second Review Hahaho"
+      ]
     },
     {
       "id": 3,
       "name": "Marco",
-      "for_sale": false,
+      "for_sale": true,
       "for_rent": true,
-      "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSh1HdgamYOAdxpCIesv6ZQONMSBY7G_xkmg&usqp=CAU",
       "location": "Seattle, Washington",
-      "description": "This trailer rocks!",
-      "price": 150
+      "description": "Tractor not included with sale",
+      "price": 150,
+      "rate": 10,
+      "reviews": [
+        "First Review hahaha",
+        "Second Review Hahaho"
+      ]
     },
     {
       "id": 4,
       "name": "Conrad",
       "for_sale": false,
       "for_rent": true,
-      "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrJPhOp9g077GEc4mDaNS1nGr9MXspbx-D8A&usqp=CAU",
       "location": "Seattle, Washington",
       "description": "This trailer rocks!",
-      "price": 150
+      "price": 150,
+      "rate": 10,
+      "reviews": [
+        "First Review hahaha",
+        "Second Review Hahaho"
+      ]
     },
     {
       "id": 5,
       "name": "Will",
-      "for_sale": false,
+      "for_sale": true,
       "for_rent": true,
-      "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR02QXJvF9UohMUs4yUawG9e1TbPNzdm9B6zg&usqp=CAU",
       "location": "Seattle, Washington",
-      "description": "This trailer rocks!",
-      "price": 150
+      "description": "Gets the job done",
+      "price": 150,
+      "rate": 10,
+      "reviews": [
+        "First Review hahaha",
+        "Second Review Hahaho"
+      ]
     },
     {
       "id": 6,
       "name": "Phil",
       "for_sale": false,
       "for_rent": true,
-      "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1bTtKRY59tlJLzPnoMGOf2NiiXl2bn3Eb9g&usqp=CAU",
       "location": "Seattle, Washington",
-      "description": "This trailer rocks!",
-      "price": 150
+      "description": "Harbor freight special",
+      "price": 150,
+      "rate": 10,
+      "reviews": [
+        "First Review hahaha",
+        "Second Review Hahaho"
+      ]
     },
     {
       "id": 7,
@@ -66,46 +82,73 @@
       "for_rent": true,
       "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
       "location": "Seattle, Washington",
-      "description": "This trailer rocks!",
-      "price": 150
+      "description": "its a big box on wheels, like towing a sail",
+      "price": 150,
+      "rate": 10,
+      "reviews": [
+        "First Review hahaha",
+        "Second Review Hahaho"
+      ]
     },
     {
       "id": 8,
       "name": "Louis",
-      "for_sale": false,
+      "for_sale": true,
       "for_rent": true,
       "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
       "location": "Seattle, Washington",
-      "description": "This trailer rocks!",
-      "price": 150
+      "description": "You haven't seen one like this before!",
+      "price": 10000,
+      "rate": 10,
+      "reviews": [
+        "First Review hahaha",
+        "Second Review Hahaho"
+      ]
     },
     {
       "id": 9,
-      "name": "Bagel",
+      "name": "Extreme Duty Trailer",
       "for_sale": false,
       "for_rent": true,
       "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
       "location": "Seattle, Washington",
-      "description": "This trailer rocks!"
+      "description": "Just like Regular duty, but Extreme!",
+      "price": 150,
+      "rate": 10,
+      "reviews": [
+        "First Review hahaha",
+        "Second Review Hahaho"
+      ]
     },
     {
       "id": 10,
-      "name": "Cup",
+      "name": "Ol' Rickety",
       "for_sale": false,
       "for_rent": true,
       "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
       "location": "Seattle, Washington",
-      "description": "This trailer rocks!"
+      "description": "Picked this one up cheap at a closeout sale",
+      "price": 0,
+      "rate": 10,
+      "reviews": [
+        "First Review hahaha",
+        "Second Review Hahaho"
+      ]
     },
     {
       "id": 11,
-      "name": "Shoe",
+      "name": "Sue",
       "for_sale": true,
       "for_rent": false,
       "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
       "location": "Seattle, Washington",
-      "description": "This trailer rocks!",
-      "price": 150
+      "description": "Just like my neighbor's trailer",
+      "price": 0,
+      "rate": 10,
+      "reviews": [
+        "First Review hahaha",
+        "Second Review Hahaho"
+      ]
     },
     {
       "id": 12,
@@ -114,19 +157,13 @@
       "for_rent": false,
       "image": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/13651041-0-88785521.jpg",
       "location": "Seattle, Washington",
-      "description": "This trailer rocks!",
-      "price": 150
-    },
-    {
-      "name": "NAme no price no rate",
-      "for_sale": false,
-      "for_rent": false,
-      "image": "Image",
-      "location": "Location",
-      "description": "Description",
-      "price": "1000",
-      "rate": "75",
-      "id": 13
+      "description": "The Honda Civic of Trailers",
+      "price": 0,
+      "rate": 10,
+      "reviews": [
+        "First Review hahaha",
+        "Second Review Hahaho"
+      ]
     }
   ]
 }

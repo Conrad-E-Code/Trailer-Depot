@@ -6,7 +6,7 @@ function NavBar({setRenderState, renderState}) {
        <nav className='nav'>
         <ul>
             <li>
-                <NavLink to="/" >All Trailers</NavLink>
+                <NavLink to="/trailers" >All Trailers</NavLink>
             </li>
             <li>
                 <NavLink  to="/sales">For Sale</NavLink>
