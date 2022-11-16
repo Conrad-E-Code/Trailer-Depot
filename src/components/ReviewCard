@@ -1,0 +1,23 @@
+
+
+
+
+function ReviewCard({review}) {
+    // const mappedReviews = singleTrailerState.reviews.map((review) => {
+    //     return (
+    //         <li>{review}</li>
+    //     )
+
+    // })
+
+    return (
+        <div>
+        {/* <h1>HEllo from reviewCArd</h1>
+        {mappedReviews} */}
+        HowdY
+        </div>
+        
+    )
+}
+
+export default ReviewCard

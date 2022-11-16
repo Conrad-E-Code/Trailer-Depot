@@ -29,7 +29,10 @@ function NewForm({trailers, setTrailers}) {
             "for_rent": false,
             "image": "",
             "location": "",
-            "description": ""
+            "description": "",
+            "price": 0,
+            "rate" : 0
+
 
         }
 

@@ -6,6 +6,7 @@ import MainList from './MainList';
 import { Routes, Route } from "react-router-dom"
 import NewForm from "./NewForm"
 import {useEffect, useState} from 'react'
+import ReviewPage from "./ReviewPage"
 
 function App() {
 const [trailers, setTrailers] = useState([])
@@ -15,7 +16,7 @@ const [search, setSearch] = useState('')
 
 useEffect(() => {
 
-  fetch('http://localhost:3000/trailers')
+  fetch('http://localhost:3001/trailers')
   .then((r) => r.json())
   .then(setTrailers)
 
@@ -52,7 +53,8 @@ fetch(`http://localhost:3001/trailers/${id}`, configObj)
         <Route element={<NewForm trailers={trailers} setTrailers={setTrailers} />} path="/trailers/new"/>
         <Route element={<MainList handleDelete={handleDelete} trailers={trailersFS} />} path="/sales"/>
         <Route element={<MainList handleDelete={handleDelete} trailers={trailersFR} />} path="/rent"/>
-        <Route element={<MainList handleDelete={handleDelete} trailers={filterTrailers()}/>} path="/"/>
+        <Route element={<MainList handleDelete={handleDelete} trailers={filterTrailers()}/>} path="/trailers"/>
+        {/* <Route element={<ReviewPage />} path="/trailers/:id/details"/> */}
       </Routes>
     </div>
   )
