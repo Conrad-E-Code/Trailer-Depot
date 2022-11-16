@@ -3,7 +3,6 @@ import Header from './Header'
 import NavBar from './NavBar'
 import Search from './Search'
 import MainList from './MainList';
-import SaleList from './SaleList';
 import { Routes, Route } from "react-router-dom"
 import NewForm from "./NewForm"
 import {useEffect, useState} from 'react'
@@ -22,12 +21,27 @@ useEffect(() => {
 
 }, [])
 
+
 function filterTrailers() {
   return trailers.filter((trailer) => {
     return trailer.name.includes(search)
   })
 }
-  
+
+function handleDelete(id) {
+  console.log(id)
+
+  const trailersminusOne = trailers.filter((trailer) => trailer.id !== id)
+  console.log(trailersminusOne)
+  console.log(trailers)
+  const configObj = {
+      method:"DELETE",
+      headers: {"content-type": "application/json"}
+  }
+fetch(`http://localhost:3001/trailers/${id}`, configObj)
+.then(setTrailers(trailersminusOne)
+)
+}  
   
   return (
     <div className="App">
@@ -36,9 +50,9 @@ function filterTrailers() {
       <NavBar />
       <Routes>
         <Route element={<NewForm trailers={trailers} setTrailers={setTrailers} />} path="/trailers/new"/>
-        <Route element={<MainList trailers={trailersFS} />} path="/sales"/>
-        <Route element={<MainList trailers={trailersFR} />} path="/rent"/>
-        <Route element={<MainList trailers={filterTrailers()}/>} path="/"/>
+        <Route element={<MainList handleDelete={handleDelete} trailers={trailersFS} />} path="/sales"/>
+        <Route element={<MainList handleDelete={handleDelete} trailers={trailersFR} />} path="/rent"/>
+        <Route element={<MainList handleDelete={handleDelete} trailers={filterTrailers()}/>} path="/"/>
       </Routes>
     </div>
   )
