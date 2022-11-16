@@ -1,20 +1,20 @@
 {
     "trailers": [
         {
-    "Name":"J-roc",
-    "Price": 0,
+    "name":"J-roc",
+    "price": 0,
     "for-sale": false,
-    "image-album": ["/Developement/code/se-prep/2-phase-group-1-project/Images/sideview-trailer-in-tow.JPG", "/Developement/code/se-prep/2-phase-group-1-project/Images/painted-tongue.JPG"],
+    "image-album": ["./images/sideview-trailer-in-tow", "./images/painted-tongue"],
     "location": {
     "city": "Seattle",
     "state": "Washington"},
     "reviews": ["This Trailer Rocks!", "I hate everything about this trailer"]
          },
          {
-            "Name":"Betsy",
-            "Price": 16,
+            "name":"Betsy",
+            "price": 16,
             "for-sale": true,
-            "image-album": ["/Developement/code/se-prep/2-phase-group-1-project/Images/trailer-basecoat.JPG", "/Developement/code/se-prep/2-phase-group-1-project/Images/painted-tongue.JPG"],
+            "image-album": ["./images/electrical-junction.JPG", "./images/painted-tongue"],
             "location": {
             "city": "Los Angeles",
             "state": "California"},
