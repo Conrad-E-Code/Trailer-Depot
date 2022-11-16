@@ -1,7 +1,6 @@
 import '../styles.css';
 import Header from './Header'
 import NavBar from './NavBar'
-//import ReviewCard from './ReviewCard';
 import Search from './Search'
 import MainList from './MainList';
 import SaleList from './SaleList';
@@ -19,7 +18,8 @@ useEffect(() => {
   .then(setTrailers)
 
 }, [])
-
+  
+  
   return (
     <div className="App">
       <Header />
@@ -29,9 +29,7 @@ useEffect(() => {
         <Route element={<NewForm />} path="/trailers/new"/>
         <Route element={<SaleList />} path="/sales"/>
         <Route element={<MainList trailers={trailers}/>} path="/"/>
-
-
-        </Routes>
+      </Routes>
     </div>
   )
 }
