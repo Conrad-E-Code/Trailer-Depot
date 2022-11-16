@@ -29,7 +29,7 @@ function NewForm({trailers, setTrailers}) {
             "for_rent": false,
             "image": "",
             "location": "",
-            "review": ""
+            "description": ""
 
         }
 
@@ -67,8 +67,9 @@ function NewForm({trailers, setTrailers}) {
                 <li><input required name="name" value={formData.name} onChange={(e) => {handleChange(e)}} placeholder='Enter Trailer Name'></input></li>
                 <li><input required name="image" value={formData.image} onChange={(e) => {handleChange(e)}} placeholder='Image URL'></input></li>
                 <li><input required name="location"value={formData.location} onChange={(e) => {handleChange(e)}} placeholder='Add location'></input></li>
-                <li><input required name="review" value={formData.review} onChange={(e) => {handleChange(e)}} placeholder='Add a Review *fix me*'></input></li>
+                <li><input required name="description" value={formData.review} onChange={(e) => {handleChange(e)}} placeholder='Add a Description *fix me*'></input></li>
                 {formData["for_sale"] ? <li><input required type="number" name="price" value={formData.price} onChange={(e) => {handleChange(e)}} placeholder='Enter Asking Price'></input></li>: null}
+                {formData["for_rent"] ? <li><input required type="number" name="rate" value={formData.rate} onChange={(e) => {handleChange(e)}} placeholder='Enter Daily Rate'></input></li>: null}
             </ul>
             <button type="submit" className='new-form-button'>Submit</button>            
         </form >
