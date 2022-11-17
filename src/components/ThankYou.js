@@ -11,6 +11,7 @@ return(
         <button onClick={play} >Complaints?</button>
         <Link to="/builds">See Our Current Workload</Link>
         <Link to="/"> Return To Home</Link>
+        <Link to="/stretch" >Stretch Goals</Link>
         
     </div>
     )
