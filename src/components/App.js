@@ -72,7 +72,7 @@ function increment() {
         <Route element={<NewForm trailers={trailers} setTrailers={setTrailers} />} path="/trailers/new"/>
         <Route element={<MainList handleDelete={handleDelete} trailers={trailersFS} increment={increment}/>} path="/sales"/>
         <Route element={<MainList handleDelete={handleDelete} trailers={trailersFR} increment={increment}/>} path="/rent"/>
-        <Route element={<MainList handleDelete={handleDelete} trailers={filterTrailers()} increment={increment}/>} path="/trailers"/>
+        <Route element={<MainList handleDelete={handleDelete} trailers={filterTrailers()} increment={increment}/>} path="/"/>
         <Route element={<ReviewPage />} path="/trailers/:id/details"/>
         <Route element={<BuildForm />} path="/builds/new"></Route>
       </Routes>
