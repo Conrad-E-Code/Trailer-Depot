@@ -93,7 +93,7 @@
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin-left: 119px;
+  margin-left: 121px;
   padding-top: 30px;
 }
 
@@ -155,4 +155,58 @@
 
 .item-count {
   margin: none;
+}
+
+.build-card {
+  text-align: center;
+  padding-top: 25px;
+  border: 2px solid;
+  border-color: black;
+  padding-bottom: 25px;
+  flex-direction: row;
+  border-radius: 12px;
+  background-color: white
+}
+
+.package-list {
+  list-style: none;
+  background-color: white;
+}
+
+.build-item {
+  display: flex;
+  padding: 1rem;
+  width: 500px;
+  text-align: center;
+  padding: 50px;
+  padding-left: 700px;
+}
+
+.build-name {
+  background-color: white;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.build-label {
+  background-color: white;
+  text-align: center;
+  padding-right: 40px;
+}
+
+.build-price {
+  background-color: white;
+}
+
+.build-desc {
+  background-color: white;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.package-map {
+  background-color: white;
+  text-align: center;
+  padding-right: 30px;
 }
