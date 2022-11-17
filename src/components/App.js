@@ -10,6 +10,7 @@ import ReviewPage from "./ReviewPage"
 import BuildList from "./BuildList"
 import PackageList from './PackageList';
 import BuildForm from './BuildForm';
+import ShoppingCart from './ShoppingCart'
 
 function App() {
 const [trailers, setTrailers] = useState([])
@@ -26,7 +27,7 @@ fetch("http://localhost:3001/builds")
 
 useEffect(() => {
 
-  fetch('http://localhost:3001/trailers')
+  fetch('http://localhost:3000/trailers')
   .then((r) => r.json())
   .then(setTrailers)
 
@@ -57,6 +58,7 @@ fetch(`http://localhost:3001/trailers/${id}`, configObj)
   return (
     <div className="App">
       <Header />
+      <ShoppingCart />
       <Search search={search} setSearch={setSearch}/>
       <NavBar />
       <Routes>
