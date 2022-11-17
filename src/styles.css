@@ -104,6 +104,8 @@
 .card-image {
   border: 2px solid;
   border-color: black;
+  object-fit: cover;
+  text-align: center;
 }
 
 * {
