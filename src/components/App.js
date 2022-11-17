@@ -13,6 +13,7 @@ import BuildForm from './BuildForm';
 import ShoppingCart from './ShoppingCart'
 
 function App() {
+
 const [trailers, setTrailers] = useState([])
 const  trailersFS = trailers.filter((trailer) => { return trailer["for_sale"] === true})
 const  trailersFR = trailers.filter((trailer) => { return trailer["for_rent"] === true})
@@ -74,7 +75,7 @@ function increment() {
         <Route element={<MainList handleDelete={handleDelete} trailers={trailersFR} increment={increment}/>} path="/rent"/>
         <Route element={<MainList handleDelete={handleDelete} trailers={filterTrailers()} increment={increment}/>} path="/"/>
         <Route element={<ReviewPage />} path="/trailers/:id/details"/>
-        <Route element={<BuildForm />} path="/builds/new"></Route>
+        <Route element={<BuildForm builds={builds} setBuilds={setBuilds} />} path="/builds/new"></Route>
       </Routes>
     </div>
   )

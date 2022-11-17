@@ -57,7 +57,6 @@
   "packages": [
     {
       "id": 1,
-      "num": 1,
       "name": "Starter Package",
       "description": "King Kong could use this axle package for his roller-skates, Increases weight rating for on-highway use",
       "price": 200
