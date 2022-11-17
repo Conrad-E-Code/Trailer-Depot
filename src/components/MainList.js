@@ -1,11 +1,11 @@
 
 import TrailerCard from './TrailerCard'
 
-function MainList({ trailers, handleDelete }) {
+function MainList({ trailers, handleDelete, increment }) {
 
     const mappedTrailers = trailers.map((trailer) => {
         return (
-            <TrailerCard handleDelete={handleDelete} key={trailer.id} trailers={trailer}/>
+            <TrailerCard handleDelete={handleDelete} key={trailer.id} trailers={trailer} increment={increment}/>
         )
     })
 

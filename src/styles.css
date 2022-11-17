@@ -1,7 +1,7 @@
 .title {
   text-align: center;
   color: black;
-  /* padding-left: 1.7%; */
+  font-size: 45px
 }
 
 .search-bar {
@@ -136,7 +136,17 @@
 
 .shopping-cart {
   position: absolute;
-  right: 150px;
-  top: 16px;
+  right: 50px;
+  top: 30px;
   text-align: center;
+  margin: none;
+}
+
+.cart-logo {
+  font-size: 30px;
+  padding-bottom: 0px;
+}
+
+.item-count {
+  margin: none;
 }

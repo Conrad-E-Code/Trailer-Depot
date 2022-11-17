@@ -3,10 +3,9 @@ import Card from 'react-bootstrap/Card';
 import React, { useState } from 'react';
 import {Link} from "react-router-dom"
 
-function TrailerCard({ trailers, handleDelete  }) {
+function TrailerCard({ trailers, handleDelete, increment  }) {
 
     const [showReview, setShowReview] = useState(false)
-    const [showHover, setShowHover] = useState(false)
 
     const id = trailers.id
     
@@ -26,7 +25,7 @@ function TrailerCard({ trailers, handleDelete  }) {
                 {trailers.for_rent ? <ListGroup.Item className='card-price'>Daily Rate: ${trailers.rate} </ListGroup.Item> : null}
                 {/* <ListGroup.Item className='card-price'>Price: {trailers.for_sale ? "$" + trailers.price : "Not For Sale"}</ListGroup.Item> */}
                 <ListGroup.Item className='location'>{trailers.location}</ListGroup.Item>
-                <ListGroup.Item className='add-to-cart'><button style={{ cursor: 'pointer', backgroundColor: 'whitesmoke'}}>Add To Cart</button></ListGroup.Item>
+                <ListGroup.Item className='add-to-cart'><button style={{ cursor: 'pointer', backgroundColor: 'whitesmoke'}} onClick={increment}>Add To Cart</button></ListGroup.Item>
                 <ListGroup.Item className='delete-button'>
                         <button onClick={() => {handleDelete(id)}} style={{ cursor: 'pointer', backgroundColor: 'whitesmoke' }}>Delete Post</button>
                  {/* <Link to={`/trailers/${id}/details`}><button>Details</button></Link> */}
