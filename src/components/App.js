@@ -18,9 +18,10 @@ const  trailersFS = trailers.filter((trailer) => { return trailer["for_sale"] ==
 const  trailersFR = trailers.filter((trailer) => { return trailer["for_rent"] === true})
 const [search, setSearch] = useState('')
 const [builds, setBuilds] = useState([])
+const [count, setCount] = useState(0);
 
 useEffect(() => {
-fetch("http://localhost:3001/builds")
+fetch("http://localhost:3000/builds")
 .then(r => r.json())
 .then((buildsData) => setBuilds(buildsData))
 }, [])
@@ -54,20 +55,24 @@ fetch(`http://localhost:3001/trailers/${id}`, configObj)
 .then(setTrailers(trailersminusOne)
 )
 }  
+
+function increment() {
+  setCount(count + 1)
+}
   
   return (
     <div className="App">
       <Header />
-      <ShoppingCart />
+      <ShoppingCart count={count} setCount={setCount}/>
       <Search search={search} setSearch={setSearch}/>
       <NavBar />
       <Routes>
         <Route element={<BuildList builds={builds}/>} path="/builds"></Route>
         <Route element={<PackageList/>} path="/packages"></Route>
         <Route element={<NewForm trailers={trailers} setTrailers={setTrailers} />} path="/trailers/new"/>
-        <Route element={<MainList handleDelete={handleDelete} trailers={trailersFS} />} path="/sales"/>
-        <Route element={<MainList handleDelete={handleDelete} trailers={trailersFR} />} path="/rent"/>
-        <Route element={<MainList handleDelete={handleDelete} trailers={filterTrailers()}/>} path="/trailers"/>
+        <Route element={<MainList handleDelete={handleDelete} trailers={trailersFS} increment={increment}/>} path="/sales"/>
+        <Route element={<MainList handleDelete={handleDelete} trailers={trailersFR} increment={increment}/>} path="/rent"/>
+        <Route element={<MainList handleDelete={handleDelete} trailers={filterTrailers()} increment={increment}/>} path="/trailers"/>
         <Route element={<ReviewPage />} path="/trailers/:id/details"/>
         <Route element={<BuildForm />} path="/builds/new"></Route>
       </Routes>
