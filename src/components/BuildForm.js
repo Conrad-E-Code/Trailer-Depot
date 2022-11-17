@@ -53,7 +53,7 @@ function BuildForm({builds, setBuilds}) {
     //   })
 
     useEffect(() => {
-fetch("http://localhost:3001/packages")
+fetch("http://localhost:3000/packages")
 .then(r => r.json())
 .then((packsData => setAvailPacks(packsData)))
     },[])
@@ -86,11 +86,11 @@ const bpObj = {
     headers:{"content-type": "application/json"},
     body: JSON.stringify(buildFormData)
 }
-    fetch("http://localhost:3001/builds",bpObj)
+    fetch("http://localhost:3000/builds",bpObj)
     .then(r => r.json())
     .then(respBuild => {
         setBuilds([respBuild, ...builds])
-        history("/builds")    
+        history("/Thankyou")    
     })
 
    }

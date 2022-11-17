@@ -52,6 +52,20 @@
       ],
       "buildDesc": "We created this build to move hay bails back on the farm and then called it duper",
       "customize": "Somebody's great idea, put the lugnuts on backwards and then reverse them and put them on the right way actually"
+    },
+    {
+      "name": "Demo",
+      "packages": [
+        {
+          "id": 111,
+          "name": "Starter Package",
+          "description": "Includes basic road-safety",
+          "price": 200
+        }
+      ],
+      "buidDesc": "I Want A Trailer That can Float across the sea.",
+      "customize": "Sailboat",
+      "id": 3
     }
   ],
   "packages": [
