@@ -12,6 +12,7 @@ import PackageList from './PackageList';
 import BuildForm from './BuildForm';
 
 function App() {
+
 const [trailers, setTrailers] = useState([])
 const  trailersFS = trailers.filter((trailer) => { return trailer["for_sale"] === true})
 const  trailersFR = trailers.filter((trailer) => { return trailer["for_rent"] === true})
@@ -66,6 +67,7 @@ fetch(`http://localhost:3001/trailers/${id}`, configObj)
         <Route element={<MainList handleDelete={handleDelete} trailers={trailersFS} />} path="/sales"/>
         <Route element={<MainList handleDelete={handleDelete} trailers={trailersFR} />} path="/rent"/>
         <Route element={<MainList handleDelete={handleDelete} trailers={filterTrailers()}/>} path="/trailers"/>
+        <Route element={<MainList handleDelete={handleDelete} trailers={filterTrailers()}/>} path="/"/>
         <Route element={<ReviewPage />} path="/trailers/:id/details"/>
         <Route element={<BuildForm />} path="/builds/new"></Route>
       </Routes>
