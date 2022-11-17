@@ -1,7 +1,8 @@
 .title {
   text-align: center;
   color: black;
-  font-size: 45px
+  font-size: 45px;
+  padding-bottom: 5px;
 }
 
 .search-bar {
@@ -46,6 +47,7 @@
 .nav li {
   cursor: pointer;
   font-weight: 500;
+  color: black;
 }
 
 .new-trailer-form {
@@ -91,7 +93,8 @@
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin-left: 115px;
+  margin-left: 119px;
+  padding-top: 30px;
 }
 
 .card-item {
@@ -118,6 +121,7 @@
 
 .card-price {
   background-color: white;
+  padding-bottom: 5px;
 }
 
 .card-description {
