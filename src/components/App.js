@@ -11,6 +11,7 @@ import BuildList from "./BuildList"
 import PackageList from './PackageList';
 import BuildForm from './BuildForm';
 import ShoppingCart from './ShoppingCart'
+import ThankYou from './ThankYou';
 
 function App() {
 
@@ -76,6 +77,7 @@ function increment() {
         <Route element={<MainList handleDelete={handleDelete} trailers={filterTrailers()} increment={increment}/>} path="/"/>
         <Route element={<ReviewPage />} path="/trailers/:id/details"/>
         <Route element={<BuildForm builds={builds} setBuilds={setBuilds} />} path="/builds/new"></Route>
+        <Route element={<ThankYou />} path="/Thankyou"></Route>
       </Routes>
     </div>
   )
