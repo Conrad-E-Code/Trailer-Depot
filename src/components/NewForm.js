@@ -18,7 +18,7 @@ function NewForm({trailers, setTrailers}) {
             body: JSON.stringify(formData)
         }
         
-    fetch("http://localhost:3001/trailers", configObj)
+    fetch("http://localhost:3000/trailers", configObj)
     .then(r => r.json())
     .then((respData) => {
         console.log(respData)
