@@ -3,7 +3,7 @@ import {useSound} from "use-sound"
 import BuildCard from "./BuildCard"
 
 
-function BuildList({builds}) {
+function BuildList({builds,}) {
 
 
 const buildElements = builds.map((build) => {

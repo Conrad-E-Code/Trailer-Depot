@@ -69,7 +69,7 @@ fetch(`http://localhost:3001/trailers/${id}`, configObj)
         <Route element={<MainList handleDelete={handleDelete} trailers={filterTrailers()}/>} path="/trailers"/>
         <Route element={<MainList handleDelete={handleDelete} trailers={filterTrailers()}/>} path="/"/>
         <Route element={<ReviewPage />} path="/trailers/:id/details"/>
-        <Route element={<BuildForm />} path="/builds/new"></Route>
+        <Route element={<BuildForm builds={builds} setBuilds={setBuilds} />} path="/builds/new"></Route>
       </Routes>
     </div>
   )

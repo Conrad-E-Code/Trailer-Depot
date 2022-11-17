@@ -251,17 +251,6 @@
         "First Review hahaha",
         "Second Review Hahaho"
       ]
-    },
-    {
-      "name": "Conrad",
-      "for_sale": false,
-      "for_rent": false,
-      "image": "helloIMG",
-      "location": "Boat",
-      "description": "Description",
-      "price": 0,
-      "rate": 0,
-      "id": 13
     }
   ]
 }
