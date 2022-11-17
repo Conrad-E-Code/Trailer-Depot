@@ -1,4 +1,100 @@
 {
+  "builds" : [ 
+    {"id": 1,
+      "name":"Super-Flatbed-Hauler",
+      "packages": [ {
+        "id": 111,
+        "name": "Starter Package",
+        "description" : "Includes basic road-safety",
+        "price" : 200
+  
+      },
+      {
+        "id": 222,
+        "name": "Heavy Duty Axle Upgrade Package",
+        "description" : "King Kong could use this axle package for his roller-skates, Increases weight rating for on-highway use",
+        "price" : 200
+  
+      },
+      {
+        "id": 555,
+        "name": "Super Winch Package",
+        "description" : "Professionally installed Winch/battery, requires additonal packages for extra hidden cost JUST KIDDING!!! you pay what the price says and we make sure it works for your flatbed setup!",
+        "price" : 200
+  
+      }
+    ],
+    "buildDesc": "We created this build to move hay bails back on the farm",
+    "customize": "Somebody's great idea, put the lugnuts on backwards"
+    },
+    {"id": 2,
+      "name":"Super-Duper-Flatbed-Hauler",
+      "packages": [ {
+        "id": 1,
+        "num": 1,
+        "name": "Starter Package",
+        "description" : "Includes basic road-safety",
+        "price" : 205
+  
+      },
+      {
+        "id": 2,
+        "name": "Heavy Duty Axle Upgrade Package",
+        "description" : "King Kong could use this axle package for his roller-skates, Increases weight rating for on-highway use",
+        "price" : 205
+  
+      },
+      {
+        "id": 5,
+        "name": "Super Winch Package",
+        "description" : "Professionally installed Winch/battery, requires additonal packages for extra hidden cost JUST KIDDING!!! you pay what the price says and we make sure it works for your flatbed setup!",
+        "price" : 205
+  
+      }
+    ],
+    "buildDesc": "We created this build to move hay bails back on the farm and then called it duper",
+    "customize": "Somebody's great idea, put the lugnuts on backwards and then reverse them and put them on the right way actually"
+    }
+
+  ],
+  "packages": [
+    {
+      "id": 1,
+      "num": 1,
+      "name": "Starter Package",
+      "description" : "King Kong could use this axle package for his roller-skates, Increases weight rating for on-highway use",
+      "price" : 200
+
+    },
+    {
+      "id": 2,
+      "name": "Heavy Duty Axle Upgrade Package",
+      "description" : "King Kong could use this axle package for his roller-skates, Increases weight rating for on-highway use",
+      "price" : 200
+
+    },
+    {
+      "id": 3,
+      "name": "ATV hauler package",
+      "description" : "Includes rubber mat floor which can be sprayed out with a hose",
+      "price" : 300
+
+    },    
+    {
+      "id": 4,
+      "name": "Super awesome maintanence package",
+      "description" : "Allow us to service the trailer one time, and yes we will upcharge you for additional services when the time comes.",
+      "price" : 75
+
+    },
+    {
+      "id": 5,
+      "name": "Super Winch Package",
+      "description" : "Professionally installed Winch/battery, requires additonal packages for extra hidden cost JUST KIDDING!!! you pay what the price says and we make sure it works for your flatbed setup!",
+      "price" : 200
+
+    }
+  ],
   "trailers": [
     {
       "id": 2,
@@ -164,6 +260,17 @@
         "First Review hahaha",
         "Second Review Hahaho"
       ]
+    },
+    {
+      "name": "Conrad",
+      "for_sale": false,
+      "for_rent": false,
+      "image": "helloIMG",
+      "location": "Boat",
+      "description": "Description",
+      "price": 0,
+      "rate": 0,
+      "id": 13
     }
   ]
 }

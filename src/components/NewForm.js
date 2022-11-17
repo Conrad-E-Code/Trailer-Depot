@@ -1,10 +1,14 @@
 import {useState} from 'react'
 import {useNavigate} from "react-router-dom"
+import {useSound} from "use-sound"
+import buildButton from "../sound/buildButton.mp3"
 
 function NewForm({trailers, setTrailers}) {
+    const [submitSound] = useSound(buildButton) 
     const history = useNavigate()
 
     function handleSubmit(e) {
+        submitSound()
         e.preventDefault()
         const configObj = {
             method:"POST",
