@@ -7,6 +7,7 @@ import { Routes, Route } from "react-router-dom"
 import NewForm from "./NewForm"
 import {useEffect, useState} from 'react'
 import ReviewPage from "./ReviewPage"
+import ShoppingCart from './ShoppingCart'
 
 function App() {
 const [trailers, setTrailers] = useState([])
@@ -16,7 +17,7 @@ const [search, setSearch] = useState('')
 
 useEffect(() => {
 
-  fetch('http://localhost:3001/trailers')
+  fetch('http://localhost:3000/trailers')
   .then((r) => r.json())
   .then(setTrailers)
 
@@ -47,6 +48,7 @@ fetch(`http://localhost:3001/trailers/${id}`, configObj)
   return (
     <div className="App">
       <Header />
+      <ShoppingCart />
       <Search search={search} setSearch={setSearch}/>
       <NavBar />
       <Routes>
