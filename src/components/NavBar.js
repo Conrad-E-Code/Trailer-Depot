@@ -1,9 +1,7 @@
 import {NavLink} from 'react-router-dom'
-import useSound from "use-sound"
-import buildButton from "../sound/buildButton.mp3"
 
 function NavBar({setRenderState, renderState}) {
-    const [play] = useSound(buildButton)
+    
 
     return (
        <nav className='nav'>
