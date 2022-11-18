@@ -156,6 +156,52 @@
 .item-count {
   margin: none;
 }
+.build-form-list {
+  list-style:none;
+  text-align: left;
+  background-color: antiquewhite;
+}
+
+.build-form input {
+  background-color:rgb(240, 218, 193);
+  text-align: center;
+  
+}
+.build-form {
+  padding-left: 50px;
+  padding-right: 50px;
+  border: 6px solid rgb(8, 8, 8);
+  align-self: center;
+  position: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: antiquewhite;
+
+}
+
+.build-form li {
+  padding-top: 20px;
+}
+
+.bfli {
+  background-color: antiquewhite;
+}
+p.bfli {
+  background-color: antiquewhite;
+}
+
+.bfdiv{
+  position: relative;
+}
+
+.li-padding {
+  list-style: none;
+  padding-left: 625px;
+}
+
+.thank-you-div {
+  text-align: center;
+font-weight: bold;}
 
 .build-card {
   text-align: center;

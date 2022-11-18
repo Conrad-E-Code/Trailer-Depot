@@ -12,6 +12,7 @@ import PackageList from './PackageList';
 import BuildForm from './BuildForm';
 import ShoppingCart from './ShoppingCart'
 import ThankYou from './ThankYou';
+import Stretch from "./Stretch"
 
 function App() {
 
@@ -78,6 +79,7 @@ function increment() {
         <Route element={<ReviewPage />} path="/trailers/:id/details"/>
         <Route element={<BuildForm builds={builds} setBuilds={setBuilds} />} path="/builds/new"></Route>
         <Route element={<ThankYou />} path="/Thankyou"></Route>
+        <Route element={<Stretch />} path="/stretch"></Route>
       </Routes>
     </div>
   )
