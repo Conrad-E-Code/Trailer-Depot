@@ -1,7 +1,7 @@
 function Header() {
     return (
         <div>
-            <h1 className='title'>Flatiron Trailer Shop</h1>
+            <h1 className='title'>Trailer SuperApp</h1>
         </div>
     )
 }

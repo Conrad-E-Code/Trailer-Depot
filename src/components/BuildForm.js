@@ -4,6 +4,7 @@ import useSound from "use-sound"
 import buildButton from "../sound/buildButton.mp3"
 import PackageList from "./PackageList"
 import {useNavigate} from "react-router-dom"
+import electricalBox from "../images/electricalBox.jpg"
 function BuildForm({builds, setBuilds}) {
     const history = useNavigate()
     const [play] = useSound(buildButton)
@@ -59,23 +60,24 @@ fetch("http://localhost:3000/packages")
     },[])
    const mappedPacks = availPacks.map((pack)=> {
     return ( 
-        <>
-            {`${pack.name}`}
+        <li style={{backgroundColor: "antiquewhite",}} key={`${pack.name}-li`}>
+            <span style={{fontWeight: "bold",
+                            backgroundColor: "antiquewhite"}}>{`${pack.name}`}</span>
             {isChecked ?
-            <label key={pack.name} >
-                 <input onChange={(e) => checkHandler(e)}type="checkbox" name={parseInt(pack.price)} >
+            <label style={{backgroundColor: "antiquewhite"}} className="bfdiv" key={`${pack.name}-label`} >
+                 <input style={{backgroundColor: "antiquewhite"}} key={`${pack.name}-input`}onChange={(e) => checkHandler(e)}type="checkbox" name={parseInt(pack.price)} >
                  </input>
-                 <p>{`Package Includes: ${pack.description}`}</p>
+                 <p style={{backgroundColor: "antiquewhite"}} key={`${pack.name}-p`}>{`Package Includes: ${pack.description}`}</p>
             </label>:
-            <label key={pack.name} >
-             <input onChange={checkHandler} type="checkbox" name={pack.name}>
+            <label style={{backgroundColor: "antiquewhite"}}  key={pack.name} >
+             <input style={{backgroundColor: "antiquewhite"}}  key={`${pack.name}-label-false`} onChange={checkHandler} type="checkbox" name={pack.name}>
                 </input>
             </label>
             }
             
         
         <br/>
-        </> 
+        </li> 
         
     )
    })
@@ -95,21 +97,26 @@ const bpObj = {
 
    }
     return(
-        <div>
-            Hello from BuildForm
-            <form onSubmit={(e) => {e.preventDefault()}}>
-               <ul> <li><input value={formName} onChange={(e) => setFormName(e.target.value)}type="text" placeholder="Name"></input></li>
+        <li className="li-padding" ><div className="bfdiv">
+
+            <form className="build-form" style={{ width: '35rem', textAlign: 'center' }}
+onSubmit={(e) => {e.preventDefault()}}>
+               <ul className="build-form-list" > <li style={{backgroundColor: "antiquewhite"}}><input style={{width: "425px",height:"25px", borderRadius: "5px"}}  value={formName} onChange={(e) => setFormName(e.target.value)}type="text" placeholder="Name"></input></li>
                     {mappedPacks}
-                    <li><input value={formDesc} onChange={(e) => setFormDesc(e.target.value)} type="text" placeholder="buildDesc Describe what you need">
+                    <li style={{backgroundColor: "antiquewhite"}}><input  
+                    style={{width: "425px",height:"25px", borderRadius: "5px"}}value={formDesc} onChange={(e) => setFormDesc(e.target.value)} type="text" placeholder=" Describe what you need">
                     </input></li>
                     <br/>
-                    <li><input value={formCustom} onChange={(e) => setFormCustom(e.target.value)}type="text" placeholder="customize Tell us your custom ides ">
+                    <li style={{backgroundColor: "antiquewhite"}}><input 
+                    style={{width: "425px",height:"25px", borderRadius: "5px"}} value={formCustom} onChange={(e) => setFormCustom(e.target.value)}type="text" placeholder=" Tell us your custom ides ">
                     </input></li>
-                    <p>${estBuildCost} Estimated cost with included packages</p>
-                    <button onClick={handleBuild} id="buildButton2A" type="submit">BUILD IT!</button>
+                    <p style={{backgroundColor: "antiquewhite"}}>${estBuildCost} Estimated cost with included packages</p>
+                    <button title="Are you sure?" style={{backgroundColor: "white",
+                cursor: "pointer", position: "relative"}} onClick={handleBuild} id="buildButton2A" type="submit">BUILD IT!</button>
                 </ul>
          </form>
         </div>
+        </li>
     )
 }
 
